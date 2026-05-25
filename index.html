@@ -70,6 +70,13 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .highlight-warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -170,7 +177,7 @@
             </ul>
             <p style="margin-top: 15px; font-size: 0.95em; color: #666;">
                 <em>Nota: Questi dati vengono utilizzati esclusivamente per calcolare il tasso metabolico, le calorie bruciate e fornire raccomandazioni personalizzate. 
-                Telefono, indirizzo e altri dati sensibili NON vengono richiesti.</em>
+                Telefono e indirizzo NON vengono richiesti per l'uso dell'app.</em>
             </p>
 
             <h3>2.2 Dati Raccolti Durante l'Utilizzo</h3>
@@ -204,9 +211,22 @@
                 <li><strong>Archiviazione:</strong> Locale sul tuo dispositivo</li>
             </ul>
 
-            <div class="highlight">
-                <strong>⚠️ Importante:</strong> Tutti i dati sopra elencati vengono archiviati <strong>esclusivamente sul tuo dispositivo</strong>. 
-                Non trasmettiamo informazioni personali a server remoti o a terze parti senza tua esplicita autorizzazione.
+            <h3>2.3 Dati di Pagamento e Abbonamento</h3>
+            <p>
+                VettaOS offre un modello freemium con abbonamenti premium opzionali. Se scegli di sottoscrivere un abbonamento:
+            </p>
+            <ul>
+                <li><strong>Informazioni di Pagamento:</strong> I dettagli della carta di credito/PayPal vengono elaborati direttamente da <strong>Google Play Billing</strong> e <strong>NON sono memorizzati sui nostri server</strong></li>
+                <li><strong>ID Acquisto:</strong> Riceviamo un ID di transazione univoco da Google Play per verificare lo stato dell'abbonamento</li>
+                <li><strong>Email di Fatturazione:</strong> Se fornita, viene utilizzata esclusivamente per inviare ricevute e comunicazioni relative all'abbonamento</li>
+                <li><strong>Data Abbonamento:</strong> Registro della data di inizio, rinnovo, e cancellazione dell'abbonamento</li>
+                <li><strong>Archiviazione:</strong> I dati di abbonamento sono sincronizzati con i server di Google Play per la gestione del ciclo di vita dell'abbonamento</li>
+            </ul>
+
+            <div class="highlight-warning">
+                <strong>💳 Importante su Pagamenti:</strong> VettaOS <strong>NON raccoglie né archivia</strong> i dati della tua carta di credito. 
+                Tutti i pagamenti vengono gestiti da Google Play Billing utilizzando canali crittografati sicuri. 
+                Solo Google ha accesso ai tuoi dettagli di pagamento completi.
             </div>
 
             <h2>3. Dati NON Raccolti</h2>
@@ -215,11 +235,10 @@
                 <li>❌ Numero di telefono</li>
                 <li>❌ Indirizzo di casa o città</li>
                 <li>❌ Contatti o lista amici</li>
-                <li>❌ Email (a meno che non la fornisca volontariamente)</li>
                 <li>❌ Foto della libreria personale</li>
                 <li>❌ Cronologia di navigazione</li>
-                <li>❌ Dati di pagamento (se l'app è gratuita)</li>
                 <li>❌ Identificativi pubblicitari per tracciamento comportamentale</li>
+                <li>❌ Dati completi di carte di credito (elaborati solo da Google Play)</li>
             </ul>
 
             <h2>4. Integrazione di Terze Parti</h2>
@@ -237,9 +256,15 @@
                 <tbody>
                     <tr>
                         <td><strong>Google Play Services</strong></td>
-                        <td>Funzionalità base del dispositivo (Activity Recognition, GPS)</td>
-                        <td>Solo identificativi tecnici anonimi</td>
+                        <td>Funzionalità base (Activity Recognition, GPS, Billing)</td>
+                        <td>ID transazioni, identificativi tecnici anonimi</td>
                         <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Billing</strong></td>
+                        <td>Elaborazione pagamenti e gestione abbonamenti</td>
+                        <td>ID acquisto, stato abbonamento (non dettagli carta)</td>
+                        <td><a href="https://play.google.com/about/play-terms/" target="_blank">Google Play Terms</a></td>
                     </tr>
                     <tr>
                         <td><strong>Barcode Scanner Library</strong></td>
@@ -254,30 +279,51 @@
                 <strong>Nota importante:</strong> VettaOS <strong>NON integra</strong> SDK di advertising, social media, o servizi di analytics che traccierebbero il tuo comportamento.
             </p>
 
-            <h2>5. Archiviazione e Sicurezza dei Dati</h2>
+            <h2>5. Gestione Abbonamenti e Cancellazione</h2>
 
-            <h3>5.1 Dove Vengono Archiviati i Dati?</h3>
+            <h3>5.1 Come Gestire il Tuo Abbonamento</h3>
+            <ul>
+                <li><strong>Visualizzare:</strong> Vai su Google Play Store → Account → Abbonamenti → Seleziona VettaOS</li>
+                <li><strong>Modificare:</strong> Puoi cambiare il piano di abbonamento o annullare direttamente da Google Play</li>
+                <li><strong>Cancellare:</strong> Accedi a Google Play Store e annulla l'abbonamento in qualsiasi momento</li>
+                <li><strong>Rimborso:</strong> I rimborsi sono gestiti secondo la politica di Google Play Store (solitamente 48 ore dal primo pagamento)</li>
+            </ul>
+
+            <h3>5.2 Cosa Succede Quando Cancelli</h3>
+            <ul>
+                <li>✓ L'abbonamento si concluderà al termine del periodo di fatturazione corrente</li>
+                <li>✓ Perderai accesso alle funzionalità premium, ma i tuoi dati personali rimangono salvati localmente</li>
+                <li>✓ Potrai sempre sottoscrivere di nuovo in futuro</li>
+            </ul>
+
+            <h2>6. Archiviazione e Sicurezza dei Dati</h2>
+
+            <h3>6.1 Dove Vengono Archiviati i Dati?</h3>
             <ul>
                 <li>✅ <strong>Database Locale (Criptato):</strong> Tutti i tuoi dati fitness e nutrizione sono salvati localmente sul tuo dispositivo usando SQLCipher (crittografia AES-256)</li>
                 <li>✅ <strong>Backup Cloud (Opzionale):</strong> Se scegli di fare backup, i dati rimangono crittografati end-to-end</li>
-                <li>❌ <strong>Server Remoti:</strong> Noi NON ospitiamo copie dei tuoi dati su server cloud senza tua esplicita autorizzazione</li>
+                <li>✅ <strong>Dati Abbonamento:</strong> Memorizzati su server Google Play (non nostri) per la gestione del ciclo di vita</li>
+                <li>❌ <strong>Server Remoti Nostri:</strong> Noi NON ospitiamo copie dei tuoi dati personali senza autorizzazione</li>
             </ul>
 
-            <h3>5.2 Misure di Sicurezza</h3>
+            <h3>6.2 Misure di Sicurezza</h3>
             <ul>
                 <li>🔐 Crittografia AES-256 per il database locale</li>
-                <li>🔐 Nessuna trasmissione dati a meno che non richiesto per funzionalità specifiche</li>
+                <li>🔐 Nessuna trasmissione dati personali a server remoti (tranne informazioni di abbonamento a Google Play)</li>
                 <li>🔐 Permessi app minimali - richiediamo solo ciò che serve</li>
                 <li>🔐 Nessun tracker di terze parti o pixel di tracciamento</li>
+                <li>🔐 SSL/TLS per tutte le comunicazioni con Google Play</li>
             </ul>
 
-            <h2>6. Come Utilizziamo i Tuoi Dati</h2>
+            <h2>7. Come Utilizziamo i Tuoi Dati</h2>
             <p>I tuoi dati personali vengono utilizzati <strong>esclusivamente</strong> per:</p>
             <ul>
                 <li>✓ Tracciare le tue sessioni di corsa e calcolare distanza/velocità</li>
                 <li>✓ Registrare i tuoi pasti e tracciare l'intake calorico</li>
                 <li>✓ Calcolare calorie bruciate, BMI e metriche di fitness personalizzate</li>
                 <li>✓ Fornire statistiche e analisi del tuo progresso</li>
+                <li>✓ Gestire lo stato del tuo abbonamento e accesso alle funzionalità premium</li>
+                <li>✓ Inviare ricevute e notifiche di rinnovo abbonamento</li>
                 <li>✓ Migliorare l'esperienza utente e la stabilità dell'app</li>
             </ul>
 
@@ -291,7 +337,7 @@
                 <li>❌ Scopi diversi da quelli dichiarati</li>
             </ul>
 
-            <h2>7. I Tuoi Diritti (GDPR e CCPA)</h2>
+            <h2>8. I Tuoi Diritti (GDPR e CCPA)</h2>
             <p>In quanto utente, hai i seguenti diritti sulla protezione dei tuoi dati:</p>
 
             <table>
@@ -336,20 +382,18 @@
                 </tbody>
             </table>
 
-            <h2>8. Conservazione dei Dati</h2>
+            <h2>9. Conservazione dei Dati</h2>
             <p>
-                <strong>VettaOS conserva i tuoi dati localmente sul tuo dispositivo finché:</strong>
+                <strong>VettaOS conserva i tuoi dati come segue:</strong>
             </p>
             <ul>
-                <li>L'app rimane installata sul tuo dispositivo, oppure</li>
-                <li>Tu non decidi di eliminare i dati tramite le impostazioni dell'app, oppure</li>
-                <li>Tu rimuovi l'app dal dispositivo (i dati verranno eliminati automaticamente)</li>
+                <li><strong>Dati Locali:</strong> Conservati localmente sul tuo dispositivo finché l'app rimane installata o finché tu non decidi di eliminarli</li>
+                <li><strong>Dati di Abbonamento:</strong> Google Play conserva i dati di abbonamento finché il tuo account Google rimane attivo</li>
+                <li><strong>Log Server:</strong> Google Play potrebbe conservare log tecnici per 90 giorni</li>
+                <li><strong>Dopo Cancellazione App:</strong> Tutti i dati locali vengono eliminati automaticamente</li>
             </ul>
-            <p style="margin-top: 15px;">
-                Non conserviamo copie dei tuoi dati su server remoti, a meno che non tu stesso hai scelto il backup cloud.
-            </p>
 
-            <h2>9. Cookie e Tracking</h2>
+            <h2>10. Cookie e Tracking</h2>
             <p>
                 <strong>VettaOS NON utilizza:</strong>
             </p>
@@ -360,7 +404,7 @@
                 <li>❌ Identificatori pubblicitari per profiling</li>
             </ul>
 
-            <h2>10. Contatti per Privacy e Richieste Legali</h2>
+            <h2>11. Contatti per Privacy e Richieste Legali</h2>
             <div class="contact-box">
                 <p><strong>Per esercitare i tuoi diritti sulla privacy o per domande su questa policy, contattaci:</strong></p>
                 <p>
@@ -371,7 +415,7 @@
                 </p>
             </div>
 
-            <h2>11. Modifiche a Questa Privacy Policy</h2>
+            <h2>12. Modifiche a Questa Privacy Policy</h2>
             <p>
                 Potremmo aggiornare questa Privacy Policy di tanto in tanto per riflettere cambiamenti nelle nostre pratiche, 
                 aggiornamenti tecnologici, o modifiche della legge. 
@@ -381,7 +425,7 @@
                 La data di "ultimo aggiornamento" in cima a questo documento indica la versione più recente della policy.
             </p>
 
-            <h2>12. Conformità Legale</h2>
+            <h2>13. Conformità Legale</h2>
             <p>Questa Privacy Policy e le pratiche di VettaOS sono conformi a:</p>
             <ul>
                 <li>✅ <strong>GDPR</strong> (Regolamento Generale sulla Protezione dei Dati UE 2016/679)</li>
@@ -389,9 +433,10 @@
                 <li>✅ <strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasile)</li>
                 <li>✅ <strong>Google Play Store Developer Program Policies</strong></li>
                 <li>✅ <strong>Apple App Store App Privacy Policy Requirements</strong></li>
+                <li>✅ <strong>Normative su Pagamenti Digitali e E-Commerce</strong></li>
             </ul>
 
-            <h2>13. Data Protection Officer (DPO)</h2>
+            <h2>14. Data Protection Officer (DPO)</h2>
             <p>
                 Per domande specifiche sulla conformità al GDPR o segnalazioni di violazioni della privacy:
             </p>
@@ -403,20 +448,20 @@
             <div class="highlight">
                 <strong>💡 Ricorda:</strong> Poiché VettaOS memorizza tutti i tuoi dati localmente sul tuo dispositivo, 
                 sei tu il proprietario assoluto dei tuoi dati. Noi non abbiamo accesso ai tuoi allenamenti, nutrizione, o metriche personali 
-                a meno che tu non decida di condividere esplicitamente con noi.
+                a meno che tu non decida di condividere esplicitamente con noi. I dati di pagamento sono gestiti esclusivamente da Google Play.
             </div>
 
-            <h2>14. Riconoscimenti</h2>
+            <h2>15. Riconoscimenti</h2>
             <p>
                 Questa Privacy Policy è stata redatta in conformità ai migliori standard internazionali di protezione dei dati 
-                e approvata per la massima conformità legale.
+                e approvata per la massima conformità legale, incluse normative su pagamenti digitali e abbonamenti.
             </p>
 
             <footer>
                 <p>&copy; 2026 VettaOS. Tutti i diritti riservati.</p>
-                <p>Privacy Policy versione 1.0 | Ultimo aggiornamento: 25 maggio 2026</p>
+                <p>Privacy Policy versione 1.1 | Ultimo aggiornamento: 25 maggio 2026</p>
                 <p style="margin-top: 20px; color: #999; font-size: 0.85em;">
-                    Questa policy è stata generata con attenzione agli standard GDPR, CCPA e Google Play Store.<br>
+                    Questa policy è stata generata con attenzione agli standard GDPR, CCPA, Google Play Store e normative su pagamenti digitali.<br>
                     Per domande: <a href="mailto:manuelpro34.dev@gmail.com" style="color: #007bff;">manuelpro34.dev@gmail.com</a>
                 </p>
             </footer>
