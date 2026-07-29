@@ -1,471 +1,285 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for VettaOS - Fitness and Nutrition Tracking App">
+    <meta name="description" content="Informativa sulla Privacy Integrale ed Estesa per VettaOS - Fitness and Nutrition Tracking">
     <title>Privacy Policy - VettaOS</title>
+    <!-- Tailwind CSS (CDN per un caricamento rapido senza file esterni) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.05);
-        }
-        header {
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        .last-updated {
-            color: #666;
-            font-size: 0.95em;
-        }
-        h2 {
-            font-size: 1.5em;
-            color: #0056b3;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-left: 4px solid #007bff;
-            padding-left: 15px;
-        }
-        h3 {
-            font-size: 1.2em;
-            color: #0056b3;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .highlight {
-            background-color: #e7f3ff;
-            border-left: 4px solid #007bff;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .highlight-warning {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        table th {
-            background-color: #007bff;
-            color: white;
-            padding: 12px;
-            text-align: left;
-            font-weight: 600;
-        }
-        table td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-        table tr:hover {
-            background-color: #f5f5f5;
-        }
-        .checkmark {
-            color: #28a745;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .contact-box {
-            background-color: #f0f7ff;
-            border: 2px solid #007bff;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        .contact-box p {
-            margin: 10px 0;
-        }
-        .contact-box a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #666;
-            font-size: 0.9em;
-        }
-        .compliance-badge {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin: 5px;
-            font-size: 0.85em;
-            font-weight: 600;
-        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🔒 Privacy Policy - VettaOS</h1>
-            <p class="last-updated"><strong>Ultimo aggiornamento:</strong> 25 maggio 2026</p>
-            <p style="margin-top: 15px;">
-                <span class="compliance-badge">✓ GDPR Compliant</span>
-                <span class="compliance-badge">✓ CCPA Compliant</span>
-                <span class="compliance-badge">✓ Google Play Policy</span>
-            </p>
-        </header>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
-        <main>
-            <h2>1. Introduzione</h2>
-            <p>
-                VettaOS ("App", "noi", "nostro") è impegnato nel proteggere la tua privacy e nel gestire i tuoi dati personali in modo trasparente e responsabile. 
-                Questa Privacy Policy spiega come raccogliamo, utilizziamo, proteggiamo e memorizziamo i tuoi dati personali quando utilizzi la nostra applicazione mobile.
-            </p>
-            <p>
-                <strong>Se non accetti i termini di questa Privacy Policy, ti preghiamo di non utilizzare l'App.</strong>
-            </p>
-            <p>
-                Questa policy è conforme al Regolamento Generale sulla Protezione dei Dati (GDPR), al California Consumer Privacy Act (CCPA) e alle politiche di Google Play Store.
-            </p>
+    <!-- Header superato con Navigazione e Contenuto -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row gap-12">
+        
+        <!-- SIDEBAR NAVIGAZIONE (Sticky su desktop) -->
+        <aside class="lg:w-1/4 hidden lg:block">
+            <div class="sticky top-12">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Vetta<span class="text-blue-600">OS</span></h2>
+                    <p class="text-sm text-slate-500 mt-2 font-medium">Privacy & Data Policy</p>
+                </div>
+                
+                <nav class="space-y-2 text-sm font-medium text-slate-600">
+                    <a href="#intro" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">1. Introduzione</a>
+                    <a href="#dati-raccolti" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">2. Dati Personali Raccolti</a>
+                    <a href="#permessi" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">3. Permessi Android</a>
+                    <a href="#intelligenza-artificiale" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">4. Intelligenza Artificiale (AI)</a>
+                    <a href="#terze-parti" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">5. Terze Parti e Servizi</a>
+                    <a href="#conservazione" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">6. Archiviazione Dati</a>
+                    <a href="#diritti" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">7. I Tuoi Diritti (GDPR)</a>
+                    <a href="#minori" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">8. Tutela dei Minori</a>
+                    <a href="#contatti" class="block px-3 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-colors">9. Contatti</a>
+                </nav>
 
-            <h2>2. Dati Personali Raccolti</h2>
-            <p>VettaOS raccoglie <strong>esclusivamente</strong> i seguenti dati personali necessari per il funzionamento dell'app:</p>
-
-            <h3>2.1 Dati Forniti Direttamente (Profilo Utente)</h3>
-            <ul>
-                <li><strong>Nome</strong></li>
-                <li><strong>Età</strong></li>
-                <li><strong>Peso</strong></li>
-                <li><strong>Altezza</strong></li>
-            </ul>
-            <p style="margin-top: 15px; font-size: 0.95em; color: #666;">
-                <em>Nota: Questi dati vengono utilizzati esclusivamente per calcolare il tasso metabolico, le calorie bruciate e fornire raccomandazioni personalizzate. 
-                Telefono e indirizzo NON vengono richiesti per l'uso dell'app.</em>
-            </p>
-
-            <h3>2.2 Dati Raccolti Durante l'Utilizzo</h3>
-
-            <h4>📍 Localizzazione (GPS - Fine Location)</h4>
-            <ul>
-                <li><strong>Quando:</strong> Solo durante sessioni di corsa <strong>attive</strong></li>
-                <li><strong>Perché:</strong> Mappare il percorso della corsa e calcolare la distanza totale percorsa</li>
-                <li><strong>Come:</strong> Coordinate GPS precise (latitudine e longitudine)</li>
-                <li><strong>Archiviazione:</strong> Locale sul tuo dispositivo - <strong>NON trasmetiamo a server esterni</strong></li>
-            </ul>
-
-            <h4>📸 Fotocamera</h4>
-            <ul>
-                <li><strong>Quando:</strong> Solo quando scegli di scansionare un codice a barre</li>
-                <li><strong>Perché:</strong> Riconoscere automaticamente i codici a barre EAN/UPC dei prodotti alimentari per importare nutrienti e calorie</li>
-                <li><strong>Come:</strong> Accesso alla fotocamera per acquisire immagini</li>
-                <li><strong>Archiviazione:</strong> <strong>Le foto NON vengono salvate</strong> - viene estratto solo il codice a barre e immediatamente scartato dopo l'elaborazione</li>
-            </ul>
-
-            <h4>🏃 Dati di Attività Fisica</h4>
-            <ul>
-                <li><strong>Activity Recognition:</strong> Raccogliamo dati sul numero di passi tramite il servizio ACTIVITY_RECOGNITION</li>
-                <li><strong>Perché:</strong> Fornire accurati conteggi dei passi e statistiche sull'attività fisica</li>
-                <li><strong>Archiviazione:</strong> Locale sul tuo dispositivo</li>
-            </ul>
-
-            <h4>🍎 Dati Nutrizionali</h4>
-            <ul>
-                <li><strong>Cosa:</strong> Alimenti aggiunti manualmente o tramite scansione barcode, calorie, macro nutrienti (proteine, carboidrati, grassi)</li>
-                <li><strong>Archiviazione:</strong> Locale sul tuo dispositivo</li>
-            </ul>
-
-            <h3>2.3 Dati di Pagamento e Abbonamento</h3>
-            <p>
-                VettaOS offre un modello freemium con abbonamenti premium opzionali. Se scegli di sottoscrivere un abbonamento:
-            </p>
-            <ul>
-                <li><strong>Informazioni di Pagamento:</strong> I dettagli della carta di credito/PayPal vengono elaborati direttamente da <strong>Google Play Billing</strong> e <strong>NON sono memorizzati sui nostri server</strong></li>
-                <li><strong>ID Acquisto:</strong> Riceviamo un ID di transazione univoco da Google Play per verificare lo stato dell'abbonamento</li>
-                <li><strong>Email di Fatturazione:</strong> Se fornita, viene utilizzata esclusivamente per inviare ricevute e comunicazioni relative all'abbonamento</li>
-                <li><strong>Data Abbonamento:</strong> Registro della data di inizio, rinnovo, e cancellazione dell'abbonamento</li>
-                <li><strong>Archiviazione:</strong> I dati di abbonamento sono sincronizzati con i server di Google Play per la gestione del ciclo di vita dell'abbonamento</li>
-            </ul>
-
-            <div class="highlight-warning">
-                <strong>💳 Importante su Pagamenti:</strong> VettaOS <strong>NON raccoglie né archivia</strong> i dati della tua carta di credito. 
-                Tutti i pagamenti vengono gestiti da Google Play Billing utilizzando canali crittografati sicuri. 
-                Solo Google ha accesso ai tuoi dettagli di pagamento completi.
+                <div class="mt-10 p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
+                    <p class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-2">Info Documento</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-slate-600">Versione</span>
+                        <span class="font-semibold text-slate-900">1.0</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm mt-1">
+                        <span class="text-slate-600">Revisione</span>
+                        <span class="font-semibold text-slate-900">Luglio 2026</span>
+                    </div>
+                </div>
             </div>
+        </aside>
 
-            <h2>3. Dati NON Raccolti</h2>
-            <p>Per massimizzare la tua privacy, VettaOS <strong>NON raccoglie</strong>:</p>
-            <ul>
-                <li>❌ Numero di telefono</li>
-                <li>❌ Indirizzo di casa o città</li>
-                <li>❌ Contatti o lista amici</li>
-                <li>❌ Foto della libreria personale</li>
-                <li>❌ Cronologia di navigazione</li>
-                <li>❌ Identificativi pubblicitari per tracciamento comportamentale</li>
-                <li>❌ Dati completi di carte di credito (elaborati solo da Google Play)</li>
-            </ul>
+        <!-- CONTENUTO PRINCIPALE -->
+        <main class="lg:w-3/4">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                
+                <!-- Hero Header -->
+                <div class="px-8 py-10 lg:px-12 lg:py-14 border-b border-slate-100">
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">GDPR Compliant</span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800">Google Gemini AI</span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-800">Local First</span>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+                        Informativa sulla <span class="gradient-text">Privacy</span>
+                    </h1>
+                    <p class="text-lg text-slate-500">Trasparenza totale su come gestiamo e proteggiamo i tuoi dati in VettaOS.</p>
+                </div>
 
-            <h2>4. Integrazione di Terze Parti</h2>
-            <p>VettaOS utilizza un numero <strong>minimo</strong> di servizi di terze parti:</p>
+                <!-- Corpo del Testo -->
+                <div class="px-8 py-10 lg:px-12 lg:py-12 space-y-16 text-slate-600 leading-relaxed text-lg">
+                    
+                    <!-- 1. Introduzione -->
+                    <section id="intro" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Introduzione e Titolare del Trattamento</h2>
+                        <p class="mb-4">
+                            La presente Informativa sulla Privacy descrive come <strong>VettaOS</strong> (di seguito "l'App") raccoglie, utilizza e protegge i tuoi dati personali. VettaOS è un ecosistema fitness progettato per offrire monitoraggio dell'attività, analisi nutrizionale e coaching assistito da Intelligenza Artificiale.
+                        </p>
+                        <p>
+                            Ai sensi del GDPR (UE 2016/679), il Titolare del Trattamento è Manuel Procopio, contattabile per qualsiasi richiesta legata alla privacy all'indirizzo email: <a href="mailto:manuelpro34@gmail.com" class="text-blue-600 font-medium hover:underline">manuelpro34@gmail.com</a>.
+                        </p>
+                    </section>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Servizio</th>
-                        <th>Utilizzo</th>
-                        <th>Dati Condivisi</th>
-                        <th>Privacy Policy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Google Play Services</strong></td>
-                        <td>Funzionalità base (Activity Recognition, GPS, Billing)</td>
-                        <td>ID transazioni, identificativi tecnici anonimi</td>
-                        <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Google Play Billing</strong></td>
-                        <td>Elaborazione pagamenti e gestione abbonamenti</td>
-                        <td>ID acquisto, stato abbonamento (non dettagli carta)</td>
-                        <td><a href="https://play.google.com/about/play-terms/" target="_blank">Google Play Terms</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Barcode Scanner Library</strong></td>
-                        <td>Riconoscimento codici a barre</td>
-                        <td>Solo il codice riconosciuto (localmente)</td>
-                        <td>Open Source</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <!-- 2. Dati Raccolti -->
+                    <section id="dati-raccolti" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Dati Personali Raccolti</h2>
+                        <p class="mb-6">Trattiamo i dati necessari esclusivamente per la personalizzazione dell'esperienza di allenamento e nutrizione.</p>
 
-            <p style="margin-top: 20px;">
-                <strong>Nota importante:</strong> VettaOS <strong>NON integra</strong> SDK di advertising, social media, o servizi di analytics che traccierebbero il tuo comportamento.
-            </p>
+                        <h3 class="text-xl font-semibold text-slate-800 mb-3">2.1 Profilo Utente e Identità</h3>
+                        <ul class="list-disc pl-6 space-y-2 mb-8">
+                            <li><strong>Identità:</strong> Nome, indirizzo email (necessario solo per gli account cloud Firebase).</li>
+                            <li><strong>Biometria:</strong> Età, genere, altezza, peso attuale, peso target.</li>
+                            <li><strong>Obiettivi:</strong> Goal di fitness (es. massa, forza), preferenze di allenamento e attrezzatura.</li>
+                            <li><strong>Livello Tecnico:</strong> Punti XP, livello utente e grado di esperienza tecnica dichiarata.</li>
+                        </ul>
 
-            <h2>5. Gestione Abbonamenti e Cancellazione</h2>
+                        <h3 class="text-xl font-semibold text-slate-800 mb-3">2.2 Dati Sensibili sulla Salute (Art. 9 GDPR)</h3>
+                        <div class="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-xl">
+                            <h4 class="font-bold text-red-800 flex items-center mb-2">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                Inserimento Volontario
+                            </h4>
+                            <p class="text-red-900 text-base">VettaOS permette l'inserimento di dati sensibili volti alla tua sicurezza fisica:</p>
+                            <ul class="list-disc pl-5 mt-2 text-red-800 text-base space-y-1">
+                                <li><strong>Registro Infortuni:</strong> Memorizziamo le zone muscolari infortunate per consentire all'IA di adattare i carichi ed escludere esercizi a rischio.</li>
+                                <li><strong>Misure Corporee:</strong> Circonferenze muscolari e composizione corporea.</li>
+                            </ul>
+                            <p class="mt-3 text-sm text-red-700 font-medium">Questi dati sono trattati esclusivamente previo tuo esplicito consenso tramite inserimento manuale.</p>
+                        </div>
+                    </section>
 
-            <h3>5.1 Come Gestire il Tuo Abbonamento</h3>
-            <ul>
-                <li><strong>Visualizzare:</strong> Vai su Google Play Store → Account → Abbonamenti → Seleziona VettaOS</li>
-                <li><strong>Modificare:</strong> Puoi cambiare il piano di abbonamento o annullare direttamente da Google Play</li>
-                <li><strong>Cancellare:</strong> Accedi a Google Play Store e annulla l'abbonamento in qualsiasi momento</li>
-                <li><strong>Rimborso:</strong> I rimborsi sono gestiti secondo la politica di Google Play Store (solitamente 48 ore dal primo pagamento)</li>
-            </ul>
+                    <!-- 3. Permessi -->
+                    <section id="permessi" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Permessi Android e Sensori</h2>
+                        <p class="mb-6">VettaOS è trasparente sui permessi richiesti al tuo dispositivo. Richiediamo solo lo stretto indispensabile:</p>
 
-            <h3>5.2 Cosa Succede Quando Cancelli</h3>
-            <ul>
-                <li>✓ L'abbonamento si concluderà al termine del periodo di fatturazione corrente</li>
-                <li>✓ Perderai accesso alle funzionalità premium, ma i tuoi dati personali rimangono salvati localmente</li>
-                <li>✓ Potrai sempre sottoscrivere di nuovo in futuro</li>
-            </ul>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Permesso 1 -->
+                            <div class="p-5 border border-slate-200 rounded-xl bg-slate-50">
+                                <h4 class="font-bold text-slate-900 mb-2">🏃 Attività Fisica</h4>
+                                <p class="text-sm">Utilizziamo il permesso <code>ACTIVITY_RECOGNITION</code> e il sensore <code>STEP_COUNTER</code> per il contapassi. <strong>NON utilizziamo Health Connect</strong>. I dati sono processati localmente sul tuo dispositivo.</p>
+                            </div>
+                            <!-- Permesso 2 -->
+                            <div class="p-5 border border-slate-200 rounded-xl bg-slate-50">
+                                <h4 class="font-bold text-slate-900 mb-2">📍 Localizzazione e GPS</h4>
+                                <p class="text-sm">Richiediamo <code>FINE_LOCATION</code> e <code>BACKGROUND_LOCATION</code> solo durante le sessioni attive di corsa per mappare i percorsi a schermo spento.</p>
+                            </div>
+                            <!-- Permesso 3 -->
+                            <div class="p-5 border border-slate-200 rounded-xl bg-slate-50">
+                                <h4 class="font-bold text-slate-900 mb-2">📸 Fotocamera</h4>
+                                <p class="text-sm">Permesso <code>CAMERA</code> utilizzato esclusivamente in tempo reale per la scansione dei codici a barre degli alimenti. <strong>Nessuna immagine viene mai salvata o trasmessa</strong>.</p>
+                            </div>
+                            <!-- Permesso 4 -->
+                            <div class="p-5 border border-slate-200 rounded-xl bg-slate-50">
+                                <h4 class="font-bold text-slate-900 mb-2">🔔 Notifiche</h4>
+                                <p class="text-sm">Permesso <code>POST_NOTIFICATIONS</code> per inviarti promemoria di idratazione e messaggi dal tuo coach virtuale.</p>
+                            </div>
+                        </div>
+                    </section>
 
-            <h2>6. Archiviazione e Sicurezza dei Dati</h2>
+                    <!-- 4. Intelligenza Artificiale -->
+                    <section id="intelligenza-artificiale" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">4. Intelligenza Artificiale (Google Gemini)</h2>
+                        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl">
+                            <h4 class="font-bold text-indigo-900 mb-2 text-lg">Trasparenza Algoritmica</h4>
+                            <p class="text-indigo-800 mb-4">VettaOS integra potenti funzionalità di coaching basate sul motore <strong>Google Gemini (1.5 Flash)</strong>. L'IA viene utilizzata per:</p>
+                            <ul class="list-disc pl-5 mb-4 text-indigo-800 space-y-1">
+                                <li>Generare feedback tecnici post-allenamento.</li>
+                                <li>Creare piani alimentari basati sui tuoi obiettivi.</li>
+                                <li>Analizzare i progressi di forza nel tempo.</li>
+                            </ul>
+                            <p class="font-medium text-indigo-900">Privacy By Design:</p>
+                            <p class="text-indigo-800 text-sm mt-1">I dati inviati alle API di Gemini consistono esclusivamente in log numerici e metriche anonimizzate. <strong>Non inviamo MAI il tuo nome, la tua email o dati in grado di identificarti direttamente</strong> ai server dell'Intelligenza Artificiale.</p>
+                        </div>
+                    </section>
 
-            <h3>6.1 Dove Vengono Archiviati i Dati?</h3>
-            <ul>
-                <li>✅ <strong>Database Locale (Criptato):</strong> Tutti i tuoi dati fitness e nutrizione sono salvati localmente sul tuo dispositivo usando SQLCipher (crittografia AES-256)</li>
-                <li>✅ <strong>Backup Cloud (Opzionale):</strong> Se scegli di fare backup, i dati rimangono crittografati end-to-end</li>
-                <li>✅ <strong>Dati Abbonamento:</strong> Memorizzati su server Google Play (non nostri) per la gestione del ciclo di vita</li>
-                <li>❌ <strong>Server Remoti Nostri:</strong> Noi NON ospitiamo copie dei tuoi dati personali senza autorizzazione</li>
-            </ul>
+                    <!-- 5. Terze Parti -->
+                    <section id="terze-parti" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">5. Servizi di Terze Parti</h2>
+                        <p class="mb-4">Per garantire stabilità e prestazioni, ci affidiamo ad infrastrutture di livello enterprise. Condividiamo i dati strettamente necessari all'erogazione del servizio:</p>
+                        
+                        <div class="overflow-x-auto rounded-xl border border-slate-200">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-slate-50 text-slate-900 text-sm uppercase tracking-wider">
+                                        <th class="p-4 border-b border-slate-200 font-bold">Partner Tecnologico</th>
+                                        <th class="p-4 border-b border-slate-200 font-bold">Scopo del Trattamento</th>
+                                        <th class="p-4 border-b border-slate-200 font-bold">Policy Ufficiale</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-4 font-medium text-slate-900">Google Firebase (Firestore)</td>
+                                        <td class="p-4">Autenticazione account e sincronizzazione cloud dei salvataggi (se attivata).</td>
+                                        <td class="p-4"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Leggi la Policy &rarr;</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-4 font-medium text-slate-900">Firebase Crashlytics & Analytics</td>
+                                        <td class="p-4">Monitoraggio dei bug, crash di sistema e statistiche anonime di utilizzo per migliorare l'app.</td>
+                                        <td class="p-4"><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Leggi la Policy &rarr;</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-4 font-medium text-slate-900">Google Gemini API</td>
+                                        <td class="p-4">Generazione di testi e analisi IA per il coaching virtuale.</td>
+                                        <td class="p-4"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Leggi la Policy &rarr;</a></td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-4 font-medium text-slate-900">Google Play Billing</td>
+                                        <td class="p-4">Gestione sicura degli abbonamenti Premium (Nessun dato della carta di credito transita sui nostri server).</td>
+                                        <td class="p-4"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Leggi la Policy &rarr;</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
 
-            <h3>6.2 Misure di Sicurezza</h3>
-            <ul>
-                <li>🔐 Crittografia AES-256 per il database locale</li>
-                <li>🔐 Nessuna trasmissione dati personali a server remoti (tranne informazioni di abbonamento a Google Play)</li>
-                <li>🔐 Permessi app minimali - richiediamo solo ciò che serve</li>
-                <li>🔐 Nessun tracker di terze parti o pixel di tracciamento</li>
-                <li>🔐 SSL/TLS per tutte le comunicazioni con Google Play</li>
-            </ul>
+                    <!-- 6. Archiviazione e Data Retention -->
+                    <section id="conservazione" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">6. Archiviazione e Conservazione (Data Retention)</h2>
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                                <div class="ml-3">
+                                    <h4 class="font-bold text-slate-900">Sicurezza Locale Base</h4>
+                                    <p class="text-base text-slate-600">Per impostazione predefinita, i dati risiedono fisicamente sul tuo dispositivo protetti da un database Room crittografato (Standard AES-256).</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg></div>
+                                <div class="ml-3">
+                                    <h4 class="font-bold text-slate-900">Eliminazione Automatica (Inattività)</h4>
+                                    <p class="text-base text-slate-600">Nel rispetto del principio di minimizzazione del GDPR, se il tuo account cloud non registra alcun accesso per <strong>24 mesi consecutivi</strong>, provvederemo alla cancellazione automatica e irreversibile di tutti i tuoi dati personali dai nostri server Firebase.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></div>
+                                <div class="ml-3">
+                                    <h4 class="font-bold text-slate-900">Cancellazione Manuale Istantanea</h4>
+                                    <p class="text-base text-slate-600">Tramite la funzione "Elimina Profilo" presente nelle Impostazioni dell'app, puoi distruggere immediatamente e permanentemente ogni log, biometria e dato GPS sia dal telefono che dal cloud.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-            <h2>7. Come Utilizziamo i Tuoi Dati</h2>
-            <p>I tuoi dati personali vengono utilizzati <strong>esclusivamente</strong> per:</p>
-            <ul>
-                <li>✓ Tracciare le tue sessioni di corsa e calcolare distanza/velocità</li>
-                <li>✓ Registrare i tuoi pasti e tracciare l'intake calorico</li>
-                <li>✓ Calcolare calorie bruciate, BMI e metriche di fitness personalizzate</li>
-                <li>✓ Fornire statistiche e analisi del tuo progresso</li>
-                <li>✓ Gestire lo stato del tuo abbonamento e accesso alle funzionalità premium</li>
-                <li>✓ Inviare ricevute e notifiche di rinnovo abbonamento</li>
-                <li>✓ Migliorare l'esperienza utente e la stabilità dell'app</li>
-            </ul>
+                    <!-- 7. Diritti GDPR -->
+                    <section id="diritti" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">7. I Tuoi Diritti (GDPR)</h2>
+                        <p class="mb-4">In conformità con il Regolamento Generale sulla Protezione dei Dati, ti garantiamo il pieno controllo sulle tue informazioni. Hai il diritto di:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Accedere e Portabilità:</strong> Richiedere ed esportare una copia dei tuoi dati direttamente in formato JSON tramite l'app.</li>
+                            <li><strong>Rettificare:</strong> Modificare informazioni inesatte o incomplete.</li>
+                            <li><strong>Cancellare (Oblio):</strong> Eliminare l'account e tutti i dati associati senza giustificazioni.</li>
+                            <li><strong>Revocare i Consensi:</strong> Disabilitare in qualsiasi momento l'accesso a fotocamera, posizione o attività fisica tramite le impostazioni di sistema del tuo smartphone Android.</li>
+                        </ul>
+                    </section>
 
-            <p style="margin-top: 20px;">
-                <strong>NON utilizziamo i tuoi dati per:</strong>
-            </p>
-            <ul>
-                <li>❌ Marketing o pubblicità personalizzata</li>
-                <li>❌ Vendita a terze parti</li>
-                <li>❌ Profilazione o targeting comportamentale</li>
-                <li>❌ Scopi diversi da quelli dichiarati</li>
-            </ul>
+                    <!-- 8. Tutela Minori -->
+                    <section id="minori" class="scroll-mt-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">8. Tutela dei Minori</h2>
+                        <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
+                            <p class="text-amber-900">
+                                VettaOS <strong>non è destinata all'uso da parte di minori di 16 anni</strong>. Non raccogliamo, utilizziamo né condividiamo intenzionalmente informazioni personali di utenti al di sotto di tale età. Se un genitore o un tutore legale dovesse accorgersi che un minore ci ha fornito i propri dati senza consenso, è pregato di contattarci immediatamente per procedere alla cancellazione tempestiva degli stessi dai nostri server.
+                            </p>
+                        </div>
+                    </section>
 
-            <h2>8. I Tuoi Diritti (GDPR e CCPA)</h2>
-            <p>In quanto utente, hai i seguenti diritti sulla protezione dei tuoi dati:</p>
+                    <!-- 9. Contatti -->
+                    <section id="contatti" class="scroll-mt-10">
+                        <div class="bg-slate-900 text-white p-8 lg:p-10 rounded-2xl shadow-lg mt-8">
+                            <h2 class="text-2xl font-bold text-white mb-2">9. Hai domande sulla Privacy?</h2>
+                            <p class="text-slate-300 mb-6">Per esercitare i tuoi diritti, richiedere la cancellazione dei dati o per qualsiasi chiarimento in merito a questo documento, siamo a tua disposizione.</p>
+                            
+                            <div class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-slate-900 bg-white hover:bg-slate-100 transition-colors shadow-sm">
+                                <svg class="w-5 h-5 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <a href="mailto:manuelpro34@gmail.com">manuelpro34@gmail.com</a>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-4">Il Titolare del Trattamento si impegna a rispondere alle tue richieste entro un massimo di 30 giorni lavorativi.</p>
+                        </div>
+                    </section>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Diritto</th>
-                        <th>Descrizione</th>
-                        <th>Come Esercitarlo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>🔍 Accesso (GDPR Art. 15)</strong></td>
-                        <td>Richiedere una copia di tutti i tuoi dati</td>
-                        <td>Contattaci via email</td>
-                    </tr>
-                    <tr>
-                        <td><strong>✏️ Rettifica (GDPR Art. 16)</strong></td>
-                        <td>Correggere dati inesatti</td>
-                        <td>Modifica direttamente nell'app o contattaci</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🗑️ Cancellazione (GDPR Art. 17)</strong></td>
-                        <td>Eliminare tutti i tuoi dati</td>
-                        <td>Impostazioni app > Privacy > Cancella tutti i dati, o contattaci</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📤 Portabilità (GDPR Art. 20)</strong></td>
-                        <td>Ottenere i dati in formato leggibile (CSV/JSON)</td>
-                        <td>Contattaci via email</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🚫 Revoca Consenso</strong></td>
-                        <td>Revocare permessi per sensori (GPS, Camera, Activity)</td>
-                        <td>Impostazioni dispositivo > App > Autorizzazioni</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📞 Obiezione (GDPR Art. 21)</strong></td>
-                        <td>Opporsi a determinati usi dei tuoi dati</td>
-                        <td>Contattaci via email</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>9. Conservazione dei Dati</h2>
-            <p>
-                <strong>VettaOS conserva i tuoi dati come segue:</strong>
-            </p>
-            <ul>
-                <li><strong>Dati Locali:</strong> Conservati localmente sul tuo dispositivo finché l'app rimane installata o finché tu non decidi di eliminarli</li>
-                <li><strong>Dati di Abbonamento:</strong> Google Play conserva i dati di abbonamento finché il tuo account Google rimane attivo</li>
-                <li><strong>Log Server:</strong> Google Play potrebbe conservare log tecnici per 90 giorni</li>
-                <li><strong>Dopo Cancellazione App:</strong> Tutti i dati locali vengono eliminati automaticamente</li>
-            </ul>
-
-            <h2>10. Cookie e Tracking</h2>
-            <p>
-                <strong>VettaOS NON utilizza:</strong>
-            </p>
-            <ul>
-                <li>❌ Cookie (l'app è nativa, non basata su web)</li>
-                <li>❌ Pixel di tracciamento</li>
-                <li>❌ Web beacons</li>
-                <li>❌ Identificatori pubblicitari per profiling</li>
-            </ul>
-
-            <h2>11. Contatti per Privacy e Richieste Legali</h2>
-            <div class="contact-box">
-                <p><strong>Per esercitare i tuoi diritti sulla privacy o per domande su questa policy, contattaci:</strong></p>
-                <p>
-                    📧 <strong>Email:</strong> <a href="mailto:manuelpro34.dev@gmail.com">manuelpro34.dev@gmail.com</a>
-                </p>
-                <p style="font-size: 0.9em; color: #666;">
-                    Risponderemo a tutte le richieste di accesso, cancellazione e portabilità entro 30 giorni (come richiesto da GDPR).
-                </p>
+                </div>
             </div>
-
-            <h2>12. Modifiche a Questa Privacy Policy</h2>
-            <p>
-                Potremmo aggiornare questa Privacy Policy di tanto in tanto per riflettere cambiamenti nelle nostre pratiche, 
-                aggiornamenti tecnologici, o modifiche della legge. 
-                <strong>Ti notificheremo di qualsiasi cambiamento materiale tramite l'App o email.</strong>
-            </p>
-            <p>
-                La data di "ultimo aggiornamento" in cima a questo documento indica la versione più recente della policy.
-            </p>
-
-            <h2>13. Conformità Legale</h2>
-            <p>Questa Privacy Policy e le pratiche di VettaOS sono conformi a:</p>
-            <ul>
-                <li>✅ <strong>GDPR</strong> (Regolamento Generale sulla Protezione dei Dati UE 2016/679)</li>
-                <li>✅ <strong>CCPA</strong> (California Consumer Privacy Act)</li>
-                <li>✅ <strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasile)</li>
-                <li>✅ <strong>Google Play Store Developer Program Policies</strong></li>
-                <li>✅ <strong>Apple App Store App Privacy Policy Requirements</strong></li>
-                <li>✅ <strong>Normative su Pagamenti Digitali e E-Commerce</strong></li>
-            </ul>
-
-            <h2>14. Data Protection Officer (DPO)</h2>
-            <p>
-                Per domande specifiche sulla conformità al GDPR o segnalazioni di violazioni della privacy:
-            </p>
-            <ul>
-                <li>📧 Contattaci all'indirizzo: <a href="mailto:manuelpro34.dev@gmail.com">manuelpro34.dev@gmail.com</a></li>
-                <li>📢 Hai il diritto di presentare un reclamo all'autorità locale per la protezione dei dati</li>
-            </ul>
-
-            <div class="highlight">
-                <strong>💡 Ricorda:</strong> Poiché VettaOS memorizza tutti i tuoi dati localmente sul tuo dispositivo, 
-                sei tu il proprietario assoluto dei tuoi dati. Noi non abbiamo accesso ai tuoi allenamenti, nutrizione, o metriche personali 
-                a meno che tu non decida di condividere esplicitamente con noi. I dati di pagamento sono gestiti esclusivamente da Google Play.
-            </div>
-
-            <h2>15. Riconoscimenti</h2>
-            <p>
-                Questa Privacy Policy è stata redatta in conformità ai migliori standard internazionali di protezione dei dati 
-                e approvata per la massima conformità legale, incluse normative su pagamenti digitali e abbonamenti.
-            </p>
-
-            <footer>
-                <p>&copy; 2026 VettaOS. Tutti i diritti riservati.</p>
-                <p>Privacy Policy versione 1.1 | Ultimo aggiornamento: 25 maggio 2026</p>
-                <p style="margin-top: 20px; color: #999; font-size: 0.85em;">
-                    Questa policy è stata generata con attenzione agli standard GDPR, CCPA, Google Play Store e normative su pagamenti digitali.<br>
-                    Per domande: <a href="mailto:manuelpro34.dev@gmail.com" style="color: #007bff;">manuelpro34.dev@gmail.com</a>
-                </p>
+            
+            <footer class="mt-8 text-center text-sm text-slate-500 pb-12">
+                <p>&copy; 2026 VettaOS | Sviluppato per Android.</p>
+                <p class="mt-1">Documento redatto in conformità ai requisiti del GDPR, CCPA e Google Play Developer Program.</p>
             </footer>
+
         </main>
     </div>
+
 </body>
 </html>
